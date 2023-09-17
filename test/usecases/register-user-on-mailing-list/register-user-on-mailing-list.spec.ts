@@ -1,4 +1,4 @@
-import type { UserData } from '@/usecases/register-user-on-mailing-list/user-data'
+import type { UserData } from '@/entities/user-data'
 
 describe('Register user on mailing list use case', () => {
   test('should add user with complete data to mailing list', async () => {
