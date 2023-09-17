@@ -1,4 +1,4 @@
-import type { UserData } from '../register-user-on-mailing-list/user-data'
+import type { UserData } from '../user-data'
 
 export interface UserRepository {
   add(user: UserData): Promise<void>
