@@ -1,4 +1,5 @@
 module.exports = {
+  preset: '@shelf/jest-mongodb',
   roots: ['<rootDir>/test'],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
@@ -7,7 +8,6 @@ module.exports = {
     '!**/test/**',
     '!**/config/**'
   ],
-  testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
