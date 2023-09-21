@@ -21,7 +21,7 @@ export class MongodbUserRepository implements UserRepository {
   }
 
   async findAllUsers (): Promise<UserData[]> {
-    const userCollection = await MongoHelper.getCollection('users')
+    const userCollection = MongoHelper.getCollection('users')
     return await userCollection.find<UserData>({}).toArray()
   }
 
