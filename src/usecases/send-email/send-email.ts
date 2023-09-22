@@ -1,5 +1,5 @@
 import { User, UserData } from '@/entities'
-import { UseCase } from '../ports'
+import { UseCase } from '@/usecases/ports'
 import { EmailOptions, EmailService } from '@/usecases/send-email/ports'
 import { Either, left } from '@/shared'
 import { MailServiceError } from '@/usecases/errors'
