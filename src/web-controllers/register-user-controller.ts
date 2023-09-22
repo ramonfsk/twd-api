@@ -4,7 +4,7 @@ import { badRequest, created, serverError } from '@/web-controllers/util'
 import { MissingParamError } from './errors'
 import { UseCase } from '@/usecases/ports'
 
-export class RegisterUserController {
+export class RegisterAndSendEmailController {
   private readonly useCase: UseCase
 
   constructor (useCase: UseCase) {
