@@ -1,6 +1,6 @@
 import { HttpRequest, HttpResponse } from './ports'
 import { UserData } from '@/entities'
-import { badRequest, created, serverError } from '@/web-controllers/util'
+import { badRequest, ok, serverError } from '@/web-controllers/util'
 import { MissingParamError } from './errors'
 import { UseCase } from '@/usecases/ports'
 
@@ -26,7 +26,7 @@ export class RegisterAndSendEmailController {
         return badRequest(response.value)
       }
 
-      return created(response.value)
+      return ok(response.value)
     } catch (error) {
       return serverError(error)
     }
