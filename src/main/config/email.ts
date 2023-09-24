@@ -1,8 +1,8 @@
 import { EmailOptions } from '@/usecases/send-email/ports'
 
 const attachments = [{
-  filename: 'text.txt',
-  path: '../../../resources/text.txt'
+  filename: 'CleanArchitecture.jpg',
+  path: 'https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg'
 }]
 
 export function getEmailOptions (): EmailOptions {
