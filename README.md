@@ -11,6 +11,8 @@ To run this project you need create a .env file at the root of yout project with
 * `EMAIL_USERNAME`
 * `EMAIL_PASSWORD`
 
+I use [Brevo](https://www.brevo.com) to able SMTP server and test of send email.
+
 ## Topics Covered
 * Clean Architecture
 * TypeScript with Node.js
